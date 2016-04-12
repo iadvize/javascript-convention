@@ -10,7 +10,7 @@ We use this [.jscsrc](https://github.com/iadvize/javascript-convention/blob/mast
 
 - [iAdvize Private NPM](/npm.md)
 - [New Relic Browser into your project](/newrelic.md)
-
+- [Shrinkwrap - How we lock down dependency versions @iAdvize](/shrinkwrap.md)
 
 # Automatic convention enforcement
 
