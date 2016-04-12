@@ -1,7 +1,7 @@
 {
   "name": "iadvize-javascript-convention",
   "version": "1.0.0",
-  "description": "A mostly reasonable approach to JavaScript.",
+  "description": "iAdvize JavaScript Convention",
   "scripts": {
     "build-doc": "jscs2doc -O ./jscs.html",
     "postinstall":"npm outdated"
