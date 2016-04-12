@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "iAdvize JavaScript Convention",
   "scripts": {
-    "build-doc": "jscs2doc -O ./jscs.html",
+    "test": "jscs2doc -O ./jscs.html",
     "postinstall":"npm outdated"
   },
   "repository": {
