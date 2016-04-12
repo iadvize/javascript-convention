@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A mostly reasonable approach to JavaScript.",
   "scripts": {
-    "build-doc": "jscs2doc -O ./jscs.html"
+    "build-doc": "jscs2doc -O ./jscs.html",
+    "postinstall":"npm outdated"
   },
   "repository": {
     "type": "git",
