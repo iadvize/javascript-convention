@@ -8,11 +8,11 @@
   },
   "eslint": {
     "args": ["**/*.js", "!src/**/*.test.js", "!*node_modules/**"],
-    "url":"https://raw.githubusercontent.com/iadvize/javascript/master/.eslintrc_base"
+    "url":"https://raw.githubusercontent.com/iadvize/javascript-convention/master/.eslintrc_base"
   },
   "jscs": {
     "args": ["**/*.js", "!*node_modules/**"],
-    "url":"https://raw.githubusercontent.com/iadvize/javascript/master/.jscsrc"
+    "url":"https://raw.githubusercontent.com/iadvize/javascript-convention/master/.jscsrc"
   },
   "jsinspect": {
     "args": ["**/*.js", "!src/**/*.test.js", "!*node_modules/**"],
