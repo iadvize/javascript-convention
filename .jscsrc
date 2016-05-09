@@ -1,5 +1,4 @@
 {
-    "esnext": true,
     "disallowDanglingUnderscores": true,
     "disallowSpacesInNamedFunctionExpression": {
         "beforeOpeningRoundBrace": true
@@ -108,7 +107,6 @@
     "validateLineBreaks": "LF",
     "validateQuoteMarks": "'",
     "validateIndentation": 2,
-    "esnext": true,
     "excludeFiles": [
         "node_modules/**"
     ],
