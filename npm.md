@@ -6,8 +6,7 @@
 - Login to [artifactory](https://iadvize.artifactoryonline.com/iadvize/webapp/). Ask your own swarm Lead Developer (or fallback on @FGRibreau) if you don't have an access.
 
 ```shell
-curl -u ARTIFACTORY_USERNAME:ARTIFACTORY_PASSWORD https://iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/auth/iadvize >> ~/.npmrc
-curl -u ARTIFACTORY_USERNAME:ARTIFACTORY_PASSWORD https://iadvize.artifactoryonline.com/iadvize/api/npm/auth >> ~/.npmrc
+curl -u ARTIFACTORY_USERNAME:NOT_ENCRYPTED_ARTIFACTORY_PASSWORD https://iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/auth/iadvize >> ~/.npmrc
 ```
 
 this will add the @iadvize scope to your `~/.npmrc`. Your `npmrc` should contain something like this
@@ -15,18 +14,9 @@ this will add the @iadvize scope to your `~/.npmrc`. Your `npmrc` should contain
 ```js
 @iadvize:registry=https://iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/
 //iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:_password=an-awesome-and-secure-password-lol
-//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:username=fgribreau
-//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:email=fg@iadvize.com
+//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:username=your-username
+//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:email=your-email
 //iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:always-auth=true
-_auth = very-very-secret-token
-always-auth = true
-email = fg@iadvize.com
-```
-
-- then:
-
-```shell
-npm config set @iadvize:registry https://iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/
 ```
 
 - finally check that your setup is complete by trying to install a private npm package (see below).
