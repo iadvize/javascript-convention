@@ -28,8 +28,9 @@ By default (**it's not the behaviour we want**), npm install recursively install
 
 # How to add a new dependency
 
-- `npm i my-new-dependency -s`
-- `rm -r node_modules npm-shrinkwrap.json && npm i --production && npm shrinkwrap` because we should not lock down devDependencies
+- `rm -r node_modules && npm i --production` ensure to have latest libraries from shrinkwrap
+- `npm i my-new-dependency@version -s` install new dependency in right version
+- `npm shrinkwrap` update only our dependency
 - commit both updated `package.json` and `npm-shrinkwrap.json`
 - push, done.
 
