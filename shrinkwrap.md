@@ -54,6 +54,6 @@ Here we can upgrade async to 2.0.0-rc.3:
 
 # Having issues with "extraneous" packages ?
 
-Then you have some packages that are not listed on the parent package's dependencies list.
+Then you have some packages that are not listed in their parent package's dependencies list.
 You can remove them with this command:
 `npm prune`
