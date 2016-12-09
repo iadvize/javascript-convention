@@ -46,7 +46,7 @@ async      1.5.2   1.5.2  2.0.0-rc.3  iadvize-my-first-nodejs-service
 Here we can upgrade async to 2.0.0-rc.3:
 
 - npm i async@2.0.0-rc.3 -S
-- `rm -r node_modules npm-shrinkwrap.json && npm i --production && npm shrinkwrap` because we should not lock down devDependencies
+- `rm -r node_modules npm-shrinkwrap.json && npm i --production && npm prune && npm shrinkwrap` because we should not lock down devDependencies
 - `npm test` (because you have tests right?), update implementation if necessary
 - commit both updated `package.json` and `npm-shrinkwrap.json`
 - push, done.
