@@ -27,6 +27,7 @@ By default (**it's not the behaviour we want**), npm install recursively install
 
 
 # How to add a new dependency
+Prior to the shrinkwrapping process, ensure you are either doing it on your env or in local ensure you have the same version of npm as your env npm -v
 
 - `rm -r node_modules && npm cache clear && npm i --production && npm i --save --production newLib && npm prune && npm shrinkwrap` ensure to have latest libraries from shrinkwrap
 - commit both updated `package.json` and `npm-shrinkwrap.json`
