@@ -12,11 +12,12 @@ curl -u ARTIFACTORY_USERNAME:NOT_ENCRYPTED_ARTIFACTORY_PASSWORD https://iadvize.
 this will add the @iadvize scope to your `~/.npmrc`. Your `npmrc` should contain something like this
 
 ```js
-@iadvize:registry=https://iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/
-//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:_password=an-awesome-and-secure-password-lol
-//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:username=your-username
-//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:email=your-email
-//iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/:always-auth=true
+@iadvize:registry=https://iadvize.jfrog.io/iadvize/api/npm/iadvize-npm/
+//iadvize.jfrog.io/iadvize/api/npm/iadvize-npm/:_password=your-awesome-password
+//iadvize.jfrog.io/iadvize/api/npm/iadvize-npm/:username=your-username
+//iadvize.jfrog.io/iadvize/api/npm/iadvize-npm/:email=your-email
+//iadvize.jfrog.io/iadvize/api/npm/iadvize-npm/:always-auth=true
+//registry.npmjs.org/:_authToken=your-token
 ```
 
 - finally check that your setup is complete by trying to install a private npm package (see below).
