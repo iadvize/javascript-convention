@@ -6,7 +6,7 @@
 - Login to [artifactory](https://iadvize.artifactoryonline.com/iadvize/webapp/). Ask your own swarm Lead Developer (or fallback on @FGRibreau) if you don't have an access.
 
 ```shell
-curl -u ARTIFACTORY_USERNAME:NOT_ENCRYPTED_ARTIFACTORY_PASSWORD https://iadvize.artifactoryonline.com/iadvize/api/npm/iadvize-npm/auth/iadvize >> ~/.npmrc
+curl -u ARTIFACTORY_USERNAME:NOT_ENCRYPTED_ARTIFACTORY_PASSWORD https://iadvize.jfrog.io/iadvize/api/npm/iadvize-npm/auth/iadvize >> ~/.npmrc
 ```
 
 this will add the @iadvize scope to your `~/.npmrc`. Your `npmrc` should contain something like this
