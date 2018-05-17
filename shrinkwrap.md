@@ -27,10 +27,9 @@ By default (**it's not the behaviour we want**), npm install recursively install
 
 
 # How to add a new dependency
+Prior to the shrinkwrapping process, ensure you are either doing it on your env or in local ensure you have the same version of npm as your env npm -v
 
-- `rm -r node_modules && npm i --production` ensure to have latest libraries from shrinkwrap
-- `npm i my-new-dependency@version -E` install new dependency in right version
-- `npm shrinkwrap` update only our dependency
+- `rm -r node_modules && npm cache clear && npm i --production && npm i --save --production newLib && npm prune && npm shrinkwrap` ensure to have latest libraries from shrinkwrap
 - commit both updated `package.json` and `npm-shrinkwrap.json`
 - push, done.
 
@@ -46,7 +45,7 @@ async      1.5.2   1.5.2  2.0.0-rc.3  iadvize-my-first-nodejs-service
 Here we can upgrade async to 2.0.0-rc.3:
 
 - npm i async@2.0.0-rc.3 -S
-- `rm -r node_modules npm-shrinkwrap.json && npm i --production && npm shrinkwrap` because we should not lock down devDependencies
+- `rm -r node_modules && npm cache clear && npm i --production && npm prune && npm shrinkwrap` because we should not lock down devDependencies
 - `npm test` (because you have tests right?), update implementation if necessary
 - commit both updated `package.json` and `npm-shrinkwrap.json`
 - push, done.
